@@ -21,8 +21,8 @@ app.use(userRouter);
 
 
 //Listeniong to Port
-const server = app.listen(process.env.PORT, () => {
-    console.log(`app is running on port: 5000`);
+const server = app.listen(process.env.PORT, '0.0.0.0', () => {
+    console.log(`app is running on port: ${process.env.PORT}`);
 });
 
 // server timeout
