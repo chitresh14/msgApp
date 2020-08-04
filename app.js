@@ -23,7 +23,7 @@ app.use(userRouter);
 
 //Listeniong to Port
 const server = app.listen(PORT || 5000 , () => {
-    console.log(`app is running on port: ${PORT}`);
+    console.log('app is running on port:', PORT);
 });
 
 // server timeout
