@@ -8,7 +8,6 @@ const path = require('path');
 const db = require('./db/db.js');
 //Custom imports
 const userRouter = require('./server/routers/all_routes.js');
-const PORT = process.env.PORT;
 const app = express();
 
 //Adding client Path
@@ -22,7 +21,9 @@ app.use(userRouter);
 
 
 //Listeniong to Port
-const server = app.listen(5000);
+const server = app.listen(process.env.PORT, () => {
+    console.log(`app is running on port: 5000`);
+});
 
 // server timeout
 server.timeout = 50000;
