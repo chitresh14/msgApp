@@ -22,7 +22,7 @@ app.use(userRouter);
 
 
 //Listeniong to Port
-const server = app.listen(PORT || 5000 , () => {
+const server = app.listen(5000 , () => {
     console.log('app is running on port:', PORT);
 });
 
