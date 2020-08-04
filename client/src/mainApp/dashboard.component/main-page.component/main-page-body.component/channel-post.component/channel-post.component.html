@@ -1,0 +1,47 @@
+<div class="row">
+    <div class="col-md-6">
+        <div>
+            <h5>Chitresh Sharma</h5>
+        </div>
+        <div>
+            <h6>India</h6>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="channel-content_div">
+            <img ng-click="$ctrl.editMode()" class="edit-icon_img" src="/assets/icon/edit-solid.svg">
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+    	<p ng-if="!$ctrl.isEditMode" class="channel-content_p">The next generation of our icon library + toolkit is coming with more icons, more styles, more services, and more awesome. Pre-order now to get early access and releases over the next year!</p>
+        <textarea ng-if="$ctrl.isEditMode" class="post_txtarea">
+            The next generation of our icon library + toolkit is coming with more icons, more styles, more services, and more awesome. Pre-order now to get early access and releases over the next year!
+        </textarea>
+        <div ng-if="$ctrl.isEditMode" class="channel-post_btns-container channel-tags-container_div">
+            <button class="btn btn-danger channel-post_btn">Edit</button>
+            <button ng-click="$ctrl.disableEditMode()" class="btn btn-secondary channel-post_btn">Cancel</button>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12 channel-tags-container_div">
+    	<div class="channel-tags_div">
+    		<label class="channel-tags_label">Hello</label>
+    	</div>
+    	<div class="channel-tags_div">
+    		<label class="channel-tags_label">Hello 1</label>
+    	</div>
+    	<div class="channel-tags_div">
+    		<label class="channel-tags_label">Hello 2</label>
+    	</div>
+    	<div class="channel-tags_div">
+    		<label class="channel-tags_label">Hello 3</label>
+    	</div>
+    </div>
+</div>
+<br>
+<hr>
+<link rel="stylesheet" href="/src/mainApp/dashboard.component/main-page.component/main-page-body.component/channel-post.component/channel-post.component.css">

@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <base href="/">
+    <meta charset="utf-8">
+    <title>Team Messaging App</title>    
+    <!-- stylesheet Nested component should be below parnet component as css have inheritance-->
+    <link rel="stylesheet" href="/src/index.css">
+    <link rel="stylesheet" href="../assets/bootstrap-4.5.0-dist/css/bootstrap.min.css"></link>
+    <!-- Code dependent js scripts -->
+    <script src="../assets/bootstrap-4.5.0-dist/jquery/jquery_3.5.1.js"></script>
+    <script src="../assets/bootstrap-4.5.0-dist/js/bootstrap.min.js"></script>
+    <script src="../assets/bootstrap-4.5.0-dist/js/bootstrap.js"></script>
+    <script src="../assets/angularjs/angular.min.js"></script>
+    <script src="../assets/angularjs/angular-route.min.js"></script>
+    <script src="../assets/angularjs/angular-resource.min.js"></script>
+    <script src="../assets/angularjs/angular-sanitize.min.js"></script>
+
+</head>
+
+<body>
+    <div ng-app="teamMsgApp">
+        <div ng-view class="main-container"></div>
+    </div>
+    <!-- custom javascript files -->
+    <script defer src="/app.module.js"></script>
+    <script defer src="/app.route.js"></script>
+    <!-- /***********************Services***********************************/* -->
+    <script defer src="/src/services/user_auth.js"></script>
+
+    <!-- /***********************Components***********************************/* -->
+    <script defer src="/src/mainApp/main.module.js"></script>
+    <script defer src="/src/mainApp/main_app.js"></script>
+    <script defer src="/src/mainApp/signin.component/signin.component.js"></script>
+    <script defer src="/src/mainApp/signup.component/signup.component.js"></script>
+    <script defer src="/src/mainApp/dashboard.component/dashboard.component.js"></script>
+    <script defer src="/src/mainApp/dashboard.component/header.component/header.component.js"></script>
+    <script defer src="/src/mainApp/dashboard.component/footer.component/footer.component.js"></script>
+    <script defer src="/src/mainApp/dashboard.component/dashboard-body.component/dashboard-body.component.js"></script>
+    <script defer src="/src/mainApp/dashboard.component/dashboard-body.component/card.component/card.component.js"></script>
+    <script defer src="/src/mainApp/dashboard.component/main-page.component/main-page.component.js"></script>
+    <script defer src="/src/mainApp/dashboard.component/main-page.component/main-page-body.component/main-page-body.component.js"></script>
+    <script defer src="/src/mainApp/dashboard.component/main-page.component/main-page-body.component/channel-post.component/channel-post.component.js"></script>
+
+</body>
+
+</html>

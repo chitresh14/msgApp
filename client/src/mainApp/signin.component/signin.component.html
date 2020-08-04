@@ -1,0 +1,46 @@
+<div class="row signin__div-mrgin-0-pd-0">
+    <div class="col-lg-6 signin__div-mrgin-0-pd-0">
+        <div class="signin-about-container__div">
+            <img src="/assets/img/robot_avatar.png">
+            <h4 style="font-weight: 900;">Team Messaging App</h4>
+            <p class="signin-profile__paragraph"><em>Team Messaging App</em>, purpose of this app is to allow communication b/w people within an organisation.
+            </p>
+            <br>
+            <br>
+            <img class="signin-profile-about__tech-img" src="/assets/img/profile-tech-about_img.jpg">
+        </div>
+    </div>
+    <div class="col-lg-6 signin__div-mrgin-0-pd-0">
+        <div class="row signin-up-container__div">
+            <div class="col-lg-12 signin-up-container__col-div">
+                <div class="signin-up__btn-div btn-group" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-secondary" ng-click="$ctrl.visibleSignInModal(true)">Sign In</button>
+                    <button type="button" class="btn btn-secondary" ng-click="$ctrl.visibleSignInModal(false)">Sign Up</button>
+                </div>
+            </div>
+        </div>
+        <div class="row signin-up-container__div signin-form__group">
+            <div class="col-lg-12 signin__div-mrgin-0-pd-0">
+                <form ng-if="$ctrl.isSignInVisibile">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control signin__input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" ng-model="$ctrl.email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control signin__input" id="exampleInputPassword1" placeholder="Password" ng-model="$ctrl.password">
+                        <div ng-if="!$ctrl.isValidated" class="invalid-feedback">
+                            Please enter correct email or password.
+                        </div>
+                    </div>
+                    <button type="submit" ng-click="$ctrl.loginUser()" class="btn btn-primary">Log In</button>
+                </form>
+                <div ng-if="!$ctrl.isSignInVisibile">
+                    <sign-up-component></sign-up-component>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<link rel="stylesheet" type="text/css" href="/src/mainApp/signin.component/signin.component.css">

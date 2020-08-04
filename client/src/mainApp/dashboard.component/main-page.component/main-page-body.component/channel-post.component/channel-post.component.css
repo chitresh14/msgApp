@@ -1,0 +1,48 @@
+.channel-content_div {
+    float: right;
+    cursor: pointer;
+}
+
+.edit-icon_img {
+    width: 20px;
+    height: 20px;
+}
+
+.channel-content_p {
+    font-weight: 500;
+    padding-top: 3%;
+    color: #756d6e;
+}
+
+.post_txtarea {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.channel-tags-container_div {
+    display: inline-flex;
+}
+
+.channel-post_btns-container {
+    float: right;
+    margin-bottom: 1rem;
+}
+
+.channel-post_btn {
+    margin-left: 1rem;
+}
+
+.channel-tags_div {
+    margin-right: 2%;
+    border: 1px solid #fff;
+    border-radius: 6%;
+    padding: 0.2rem 0.6rem;
+    background-color: #eee;
+}
+
+.channel-tags_label {
+    margin: 0px;
+    font-weight: 500;
+    color: #888383;
+}

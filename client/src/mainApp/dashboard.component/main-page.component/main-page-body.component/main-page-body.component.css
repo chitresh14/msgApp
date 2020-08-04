@@ -1,0 +1,31 @@
+.main-page-container {
+    margin: 5% 8%;
+    background-color: #fff;
+}
+
+.middle-container_div {
+    padding: 0;
+    border-left: 10px solid #eee;
+    border-right: 10px solid #eee;
+}
+
+.middle-sub-container_div {
+    margin: 0;
+}
+
+.post_txtarea {
+    width: 100%;
+    padding: 1rem;
+}
+
+.post-container_div {
+    padding: 2%;
+}
+
+.post_btn {
+    float: right;
+}
+
+.channel-posts_div{
+	border-top: 10px solid #eee;
+}

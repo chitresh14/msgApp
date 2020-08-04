@@ -1,0 +1,18 @@
+.main-container__div {
+    padding-left: 5%;
+    padding-right: 5%;
+    margin: 0px;
+}
+
+
+.main-title__heading {
+    font-size: 36px;
+    line-height: 50px;
+    font-weight: bold;
+    text-transform: initial;
+    margin-top: 0;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: #666;
+    text-align: center;
+}

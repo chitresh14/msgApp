@@ -1,0 +1,11 @@
+.signup-padding__div {
+    padding: 0 5rem !important;
+}
+
+.invalid-feedback {
+	display: block;
+	width: 100%;
+    margin-top: .25rem;
+    font-size: 80%;
+    color: red;
+}

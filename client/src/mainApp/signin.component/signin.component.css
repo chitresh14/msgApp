@@ -1,0 +1,48 @@
+.signin__div-mrgin-0-pd-0 {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+.signin-about-container__div {
+    padding-top: 10%;
+}
+
+.signin-up-container__div {
+    margin: 0px;
+    padding: 20px 10px;
+    width: 100%;
+}
+
+.signin-profile__paragraph {
+    padding: 10px 30px 10px 30px;
+    font-size: 18px;
+}
+
+.signin-profile-about__tech-img{
+	padding-bottom: 20px;
+}
+
+.signin-up-container__col-div {
+    padding-top: 10%;
+    padding-bottom: 20px;
+}
+
+.signin-form__group {
+    padding-top: 0px;
+}
+
+.signin-up__btn-div {
+    margin: auto;
+}
+
+.signin-up__hdr {
+    float: left;
+    text-decoration: underline;
+    width: 100%;
+}
+
+.signin__input {
+    margin: auto;
+    width: 65% !important;
+}

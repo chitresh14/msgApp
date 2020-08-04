@@ -1,0 +1,43 @@
+<form>
+  <div class="form-row">
+    <div class="col-md-12 mb-3 signup-padding__div">
+      <label for="signUpUsername">Username</label>
+      <input type="text" class="form-control" id="signUpUsername" placeholder="Username" ng-model="$ctrl.username" required>
+    </div>
+    <div class="col-md-12 mb-3 signup-padding__div">
+      <label for="signUpUsername">Region</label>
+      <input type="text" class="form-control" id="signUpRegion" placeholder="Region" ng-model="$ctrl.region" required>
+    </div>
+    <div class="col-md-12 mb-3 signup-padding__div">
+      <label for="signUpEmail">Email</label>
+      <input type="email" class="form-control" id="signUpEmail" placeholder="Email" ng-model="$ctrl.email" required>
+      <div ng-if="$ctrl.isEmailExist" class="invalid-feedback">
+        Email already exits.
+      </div>
+    </div>
+    <div class="col-md-12 mb-3 signup-padding__div">
+      <label for="signUpPassword">Password</label>
+      <input type="password" class="form-control" id="signUpPassword" placeholder="Password" ng-model="$ctrl.password" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-12 mb-3 signup-padding__div">
+      <label for="signUpConfrmPaswrd">Confirm Password</label>
+      <input type="password" class="form-control" ng-class="($ctrl.isPasswordMatch() && $ctrl.confirmPassword !=null) ? 'is-valid' : 'is-invalid'" id="signUpConfrmPaswrd" placeholder="Confirm Password" ng-model="$ctrl.confirmPassword" required ng-change="$ctrl.isPasswordMatch()">
+      <div ng-show="$ctrl.isPasswordMatch()" class="valid-feedback">
+        Looks good!
+      </div>
+      <div ng-show="!$ctrl.isPasswordMatch() && $ctrl.confirmPassword !=null" class="invalid-feedback">
+        Passwords do not match
+      </div>
+    </div>
+    <div class="col-md-12 mb-3 signup-padding__div">
+      <div ng-if="$ctrl.isRegisterError" class="invalid-feedback">
+        Error while registration. Kindly try again later.
+      </div>
+    </div>
+  </div>
+  <button class="btn btn-primary" type="submit" ng-click="$ctrl.registerUser()">Register</button>
+</form>
+<link rel="stylesheet" href="/src/mainApp/signup.component/signup.component.css">

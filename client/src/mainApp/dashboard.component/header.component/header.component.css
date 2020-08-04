@@ -1,0 +1,78 @@
+nav ul {
+    width: 100%;
+    margin: 0px;
+}
+
+nav ul {
+    background-color: #e44d3a;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+ul.slide-left__unorderd_list li {
+    list-style: none;
+    float: left;
+}
+
+ul.slide-left__unorderd_list li a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    min-height: 16px;
+    padding: 18px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+ul.slide-left__unorderd_list li a:hover {
+    background-color: #dc3545;
+    ;
+    color: #fff;
+    font-weight: bold;
+}
+
+ul.slide-left__unorderd_list li.slide-right__list {
+    float: right;
+}
+
+ul.slide-left__unorderd_list li.dropdown_icon {
+    display: none;
+}
+
+.header-nav_div {
+    cursor: pointer;
+}
+
+/*#####################Mobile View################################33*/
+
+@media screen and (max-width: 920px) {
+    ul.slide-left__unorderd_list li:not(:nth-child(1)) {
+        display: none;
+    }
+
+    ul.slide-left__unorderd_list li.dropdown_icon {
+        display: block;
+        float: right;
+    }
+
+    ul.slide-left__unorderd_list.mobile_responsive_nav li.dropdown_icon {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    ul.slide-left__unorderd_list.mobile_responsive_nav {
+        position: relative;
+    }
+
+    ul.slide-left__unorderd_list.mobile_responsive_nav li {
+        display: inline;
+        float: none;
+    }
+
+    ul.slide-left__unorderd_list.mobile_responsive_nav li a {
+        display: block;
+        text-align: left;
+    }
+}

@@ -1,0 +1,13 @@
+<div class="row main-container__div">
+    <div class="col-sm-4 main-card-container__div" ng-repeat="(key, value) in $ctrl.cardContents">
+        <!-- ng-repeat="(key, value) in $ctrl.cardDetails" -->
+        <div class="card" style="background-color: papayawhip;">
+            <div class="card-body">
+                <h4 class="card-title">{{value.title}}</h4>
+                <p class="card-text">{{value.details}}</p>
+                <a class="btn btn-default btn-sm">{{value.btnTitle}}</a>
+            </div>
+        </div>
+    </div>
+</div>
+<link rel="stylesheet" type="text/css" href="/src/mainApp/dashboard.component/dashboard-body.component/card.component/card.component.css">
