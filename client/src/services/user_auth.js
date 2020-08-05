@@ -1,4 +1,5 @@
 const baseUrl = process.env.PORT;
+console.log("baseUrl::::::::::::::::::",baseUrl);
 
 function setCookie(cname, cvalue, exdays, cb) {
     var date = new Date();
