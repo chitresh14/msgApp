@@ -1,4 +1,4 @@
-const baseUrl = "http://localhost:4000/";
+const baseUrl = process.env.PORT;
 
 function setCookie(cname, cvalue, exdays, cb) {
     var date = new Date();
@@ -10,7 +10,7 @@ function setCookie(cname, cvalue, exdays, cb) {
 
 function userService($http) {
     this.registerUser = function(userData, cb) {
-        $http.post(baseUrl + 'registerUser', userData)
+        $http.post(baseUrl + '/registerUser', userData)
             .then(function(response) {
                 if (response && response.data) {
                     if (response.data.token) {
@@ -36,7 +36,7 @@ function userService($http) {
     }
 
     this.signInUser = function(loginData, cb) {
-        $http.post(baseUrl + 'signIn', loginData)
+        $http.post(baseUrl + '/signIn', loginData)
             .then(function(response) {
                 if (response && response.data) {
                     console.log(response);
