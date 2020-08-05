@@ -5,8 +5,8 @@ angular.
 module('mainModule').
 component('signUpComponent', {
     templateUrl: '/src/mainApp/signup.component/signup.component.html',
-    controller: ['userService',
-        function signUpController(userService) {
+    controller: ['userService', '$location',
+        function signUpController(userService, $location) {
 
             var signUpVm = this;
             signUpVm.email = null;
@@ -53,6 +53,7 @@ component('signUpComponent', {
                         if (response && response.data && response.data.code == 201 && response.data.msg) {
                             signUpVm.isEmailExist = false;
                             signUpVm.isRegisterError = false;
+                            $location.path( "/dashboard" );
                         } else if (response && response.data && response.data.code == 409) {
                             signUpVm.isEmailExist = true;
                             signUpVm.isRegisterError = false;
