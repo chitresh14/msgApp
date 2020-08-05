@@ -21,7 +21,7 @@ app.use(userRouter);
 
 
 //Listeniong to Port
-const server = app.listen(process.env.PORT, '0.0.0.0');
+const server = app.listen(5000, '0.0.0.0');
 
 // server timeout
 server.timeout = 50000;
