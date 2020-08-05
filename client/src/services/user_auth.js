@@ -1,6 +1,3 @@
-const baseUrl = process.env.PORT;
-console.log("baseUrl::::::::::::::::::",baseUrl);
-
 function setCookie(cname, cvalue, exdays, cb) {
     var date = new Date();
     date.setTime(date.getTime() + (exdays * 24 * 60 * 60 * 1000));
@@ -11,7 +8,7 @@ function setCookie(cname, cvalue, exdays, cb) {
 
 function userService($http) {
     this.registerUser = function(userData, cb) {
-        $http.post(baseUrl + '/registerUser', userData)
+        $http.post('/registerUser', userData)
             .then(function(response) {
                 if (response && response.data) {
                     if (response.data.token) {
@@ -37,7 +34,7 @@ function userService($http) {
     }
 
     this.signInUser = function(loginData, cb) {
-        $http.post(baseUrl + '/signIn', loginData)
+        $http.post('/signIn', loginData)
             .then(function(response) {
                 if (response && response.data) {
                     console.log(response);
